@@ -1,5 +1,5 @@
 # vue2_demo
-
+## dev分支是vue2
 ## Project setup
 ```
 npm install
