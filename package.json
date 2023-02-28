@@ -3,22 +3,44 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "dev": "vue-cli-service serve --mode development",
+    "test": "vue-cli-service serve --mode production",
+    "build:prod": "vue-cli-service build",
+    "build:stage": "vue-cli-service build --mode staging"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
+    "axios": "^0.27.2",
     "core-js": "^3.8.3",
+    "docxtemplater": "^3.32.4",
+    "docxtemplater-image-module-free": "^1.1.1",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "jszip-utils": "^0.1.0",
+    "normalize.css": "^8.0.1",
+    "pizzip": "^3.1.3",
+    "sass": "^1.54.8",
+    "sass-loader": "^13.0.2",
     "vue": "^2.6.14",
+    "vue-gemini-scrollbar": "^2.0.1",
     "vue-router": "^3.5.1",
-    "vuex": "^3.6.2"
+    "vuex": "^3.6.2",
+    "wangeditor": "^4.7.15"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "sass": "^1.32.7",
-    "sass-loader": "^12.0.0",
+    "chalk": "4.1.0",
+    "compression-webpack-plugin": "5.0.2",
+    "element-ui": "^2.15.8",
+    "svg-sprite-loader": "5.1.1",
     "vue-template-compiler": "^2.6.14"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
